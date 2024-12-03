@@ -7,7 +7,6 @@ import java.util.UUID;
 import com.learner.model.innerdata.GameCategory;
 import com.learner.model.innerdata.GameInfo;
 import com.learner.model.innerdata.TextObject;
-import com.learner.model.loadwrite.DataConstants;
 import com.learner.model.questions.Question;
 import com.learner.model.questions.QuestionFactory;
 import com.learner.model.questions.QuestionType;
@@ -236,7 +235,7 @@ public class Game {
         addQuestionsByType(QuestionType.MATCHING, 1, startIndex);
 
         // Pull 1 Sequencing Question if the game is eligible for sequencing (story games for example)
-        if (DataConstants.SEQUENCING_GAMES.contains(uuid)) {
+        if (category == GameCategory.STORY) {
             addQuestionsByType(QuestionType.SEQUENCING, 1, startIndex);
         }
     }

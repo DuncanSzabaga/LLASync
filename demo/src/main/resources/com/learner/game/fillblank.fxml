@@ -7,30 +7,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.learner.controllers.FillBlankController">
    <children>
-      <Label text="Game" translateX="269.0">
+      <Label styleClass="title" text="Title">
          <font>
-            <Font size="18.0" />
+            <Font size="48.0" />
          </font>
       </Label>
-      <Button fx:id="homeButton" mnemonicParsing="false" onAction="#goToHome" text="Home" translateX="547.0" translateY="-24.0" />
-      <Button fx:id="submitButton" mnemonicParsing="false" onAction="#goToResults" text="Submit" translateX="269.0" translateY="213.0" />
-      <Label text="Fill-in-the-blank Question" translateX="183.0" translateY="29.0">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label text="Ang damo ay kulay " translateX="154.0" translateY="65.0">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <TextField prefHeight="26.0" prefWidth="27.0" translateX="110.0" translateY="41.0">
-         <VBox.margin>
-            <Insets left="200.0" right="200.0" />
-         </VBox.margin>
-      </TextField>
+      <VBox alignment="CENTER" prefHeight="320.0" prefWidth="720.0" spacing="35.0">
+         <children>
+            <Label fx:id="questionText" text="Text">
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="answerBox" maxWidth="400.0" prefHeight="46.0" prefWidth="663.0" />
+            <Button mnemonicParsing="false" text="Sumbit" />
+         </children>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </VBox>
    </children>
 </VBox>

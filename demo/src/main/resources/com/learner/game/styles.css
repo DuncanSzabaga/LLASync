@@ -17,6 +17,8 @@
 .nav-button {
     -fx-background-color: #8B9eb7;
     -fx-text-fill: white;
+    -fx-pref-width: 94px;
+    -fx-pref-height: 46px;
 }
 
 .translate-button {
@@ -31,19 +33,19 @@
 }
 
 .title {
-    font-size: 24px;
+    -fx-font-size: 48px;
     font-weight: bold;
     -fx-text-fill: #000000;
     -fx-effect: dropshadow(three-pass-box, rgba(95, 95, 95, 0.6), 5, 0.0, 0, 1);
 }
 
 .learning-content-text {
-    font-size: 16px;
+    -fx-font-size: 16px;
     -fx-text-fill: #000000;
 }
 
 .story-content-text {
-    font-size: 14px;
+    -fx-font-size: 14px;
     -fx-text-fill: #000000;
 }
 

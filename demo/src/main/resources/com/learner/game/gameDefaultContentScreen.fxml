@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.learner.controllers.GameDefaultContentController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.learner.controllers.GameDefaultContentScreen">
    <children>
       <Label fx:id="title" styleClass="title" text="Title">
          <font>
@@ -15,7 +15,7 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="320.0" prefWidth="720.0">
          <children>
-            <Label fx:id="gameContentText" text="Text">
+            <Label fx:id="gameContentText" styleClass="learning-content-text" text="Text">
                <opaqueInsets>
                   <Insets top="20.0" />
                </opaqueInsets>
